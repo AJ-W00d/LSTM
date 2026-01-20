@@ -1,5 +1,5 @@
-# Basic Model Interface (BMI) for streamflow prediction using Long Short-Term Memory (LSTM) networks
-This Long Short-Term Memory (LSTM) network was developed for use in the [Next Generation Water Resources Modeling Framework (NextGen)](https://github.com/NOAA-OWP/ngen). LSTMs are able to provide relatively accurate streamflow predictions when compared to other model types. This module is available through a [Basic Model Interface (BMI)](https://bmi.readthedocs.io/en/latest/).
+#THIS NEEDS TO BE EDITED FOR OUR SPECIFIC NRT PROJECT
+#Summary
 
 - [Adaption from NeuralHydrology](#adaption-from-neuralhydrology)
 - [Sample Data](#sample-data)
@@ -12,11 +12,11 @@ This Long Short-Term Memory (LSTM) network was developed for use in the [Next Ge
 - [Unit Test](#unit-test)
 
 ## Adaption from NeuralHydrology
-This module is dependent on a trained deep learning model. The forward pass of this LSTM model [`nextgen_cuda_lstm.py`](./lstm/nextgen_cuda_lstm.py) is heavily based on NeuralHydrology's [`CudaLSTM`](https://neuralhydrology.readthedocs.io/en/latest/usage/models.html#cudalstm). Other model classes can be applied but [`bmi_lstm.py`](./lstm/bmi_lstm.py) would need to load it in. More information about the python package NeuralHydrology can be found [here](https://neuralhydrology.readthedocs.io/en/latest/).  
+This module is dependent on a trained deep learning model. The forward pass of this LSTM model [``]() is heavily based on NeuralHydrology's [`CudaLSTM`](https://neuralhydrology.readthedocs.io/en/latest/usage/models.html#cudalstm). Other model classes can be applied but [`bmi_lstm.py`](./lstm/bmi_lstm.py) would need to load it in. More information about the python package NeuralHydrology can be found [here](https://neuralhydrology.readthedocs.io/en/latest/).  
 
 ## Sample Data
 
-### NLDAS sample data
+### CAMELS
 Sample data required for a test run of this model is available in the [`data/`](./data) directory. This includes:
 * Forcing data: `usgs-streamflow-nldas_hourly.nc`
 * Observation values: also included in `usgs-streamflow-nldas_hourly.nc`
